@@ -1,0 +1,37 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.print("Enter first Num: ");
+    int firstNum = scanner.nextInt();
+    
+    System.out.print("Enter operator: ");
+    String operator = scanner.next();
+    
+    System.out.print("Second Num: ");
+    int secondNum = scanner.nextInt();
+    
+    if(operator.equals("+")){
+       int add = firstNum + secondNum;
+        System.out.println("The value is" + add);
+    } else if (operator.equals("-")){
+        int minus = firstNum - secondNum;
+     System.out.println("The value is" + minus);
+    } else if (operator.equals("*")){
+        int multiplication = firstNum * secondNum;
+    System.out.println("The value is" + multiplication);
+    } else if (operator.equals("/")){
+    int division = firstNum / secondNum;
+    System.out.println("The value is" + division);
+    } else {
+    System.out.println("Invalid choice");
+    }
+    scanner.close();
+    }
+   
+ 
+ }
